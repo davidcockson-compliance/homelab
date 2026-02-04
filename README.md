@@ -13,22 +13,22 @@ A dedicated home laboratory environment focusing on **Infrastructure as Code**, 
 
 ```mermaid
 graph TD
-    User[Remote User] -->|Tailscale VPN| Node1
+    User["Remote User"] -->|Tailscale VPN| Node1
     subgraph "HP ProDesk 600 G3 SFF"
-        Node1[Proxmox VE Host]
+        Node1["Proxmox VE Host"]
         
         subgraph "VM: Prod-Services (Ubuntu)"
-            Docker1[Docker Engine]
-            Proxy[Reverse Proxy]
-            Plex[PLEX Media Server]
-            Gitea[Gitea SCM]
-            Immich[Immich Backup]
+            Docker1["Docker Engine"]
+            Proxy["Reverse Proxy"]
+            Plex["PLEX Media Server"]
+            Gitea["Gitea SCM"]
+            Immich["Immich Backup"]
         end
         
         subgraph "VM: Dev-Learning (Ubuntu)"
-            Docker2[Docker Engine]
-            TestApp[Test Deployments]
-            K3s[K3s Cluster (Planned)]
+            Docker2["Docker Engine"]
+            TestApp["Test Deployments"]
+            K3s["K3s Cluster (Planned)"]
         end
     end
     
