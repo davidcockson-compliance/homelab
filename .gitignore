@@ -1,0 +1,27 @@
+# Private keys and certificates
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+*.crt
+
+# Terraform state
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Docker overrides
+docker-compose.override.yml
+
+# Secrets
+secrets/
+*.secret
+
+# System files
+.DS_Store
